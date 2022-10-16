@@ -1,0 +1,11 @@
+#venv
+venv/
+.vscode/
+requirements.txt
+
+#python
+.env
+__pycache__/
+
+#misc
+.DS_Store
