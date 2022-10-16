@@ -6,6 +6,7 @@ requirements.txt
 #python
 .env
 __pycache__/
+tempaudio/
 
 #misc
 .DS_Store

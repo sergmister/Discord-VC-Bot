@@ -4,7 +4,7 @@ import tempfile
 import nacl
 import os
 
-from discord import FFmpegPCMAudio
+from discord import FFmpegOpusAudio
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -32,6 +32,6 @@ def tts(ctx, arg):
         audio.seek(0)
         
         # if you get an error saying ffmpeg isnt defined or something along those lines you need to install ffmpeg (brew install ffmpeg)
-        prepared_audio = discord.FFmpegPCMAudio(audio.name, executable='ffmpeg')
+        prepared_audio = discord.FFmpegOpusAudio(audio.name, executable='ffmpeg')
         ctx.guild.voice_client.play(prepared_audio, after=None)
         audio.close
